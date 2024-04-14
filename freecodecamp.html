@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="freecodecamp.css" />
+  </head>
+  <body>
+    <div>
+      <header class="header">
+        <h1>Survey Form</h1>
+        <p>Feel free to fill the form below.</p>
+      </header>
+      <form id="survey-form" action="#">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"></label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="12"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Choose the option that describes your current role.</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select current roles</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNO">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you hire me?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />
+            Definitely
+          </label>
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />
+            Maybe
+          </label>
+          <label>
+            <input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />
+            Not sure
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Do you think freeCodeCamp helps with programming?</p>
+          <label>
+            <input
+              type="checkbox"
+              name="user-recommend"
+              value="definitely"
+              class="input-checkbox"
+              checked
+            />
+            Definitely
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="user-recommend"
+              value="not-sure"
+              class="input-checkbox"
+            />
+            Not sure
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Type your suggestions or comments below.</p>
+          <textarea
+            name="comment"
+            id="comments"
+            class="input-textarea"
+            placeholder="Type here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
